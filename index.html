@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zero FS Live</title>
+<link rel="icon" href="data:image/jpeg;base64,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">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.5.13/hls.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top">
+  <img class="logo" src="data:image/jpeg;base64,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" alt="Zero FS Live logo">
+  <div><h1>Zero FS Live</h1><small id="hello">Predict. Watch. Win.</small></div>
+  <span class="fanb" id="fanb" hidden></span><span class="crown" id="crown" hidden>OWNER</span>
+</div>
+<div class="banner" id="banner" hidden></div>
+
+<!-- MATCHES -->
+<section class="tab on" id="t-matches">
+  <div class="days" id="days"></div>
+  <input type="search" id="q" placeholder="Search team or league">
+  <div class="days" id="lgf" style="margin-top:10px"></div>
+  <div class="sub" id="upd"></div>
+  <div id="list"></div>
+</section>
+
+<!-- ZLIVE -->
+<section class="tab" id="t-live">
+  <div id="lown" hidden>
+    <input type="url" id="url" placeholder="IPTV link (.m3u8, .mp4 or M3U playlist)">
+    <div style="height:8px"></div><input type="text" id="cname" placeholder="Channel name shown to fans">
+    <div class="row" style="margin-top:10px"><button class="big" id="go">Play</button><button class="ghost" id="pip">PiP</button><button class="ghost" id="save">Save</button><button class="ghost" id="pub">Copy for fans</button></div>
+  </div>
+  <div class="days" id="lcat"><button class="chip on" data-c="all">▶ All</button><button class="chip" data-c="fb">⚽ Football</button><button class="chip" data-c="cat">🌍 Categories</button></div>
+  <div class="air" id="onair" hidden><span>📡 On air: <b></b></span><button class="ghost" id="airgo">Watch</button></div>
+  <div class="err" id="err"></div>
+  <div class="player" id="pl"><video id="v" controls controlslist="nofullscreen" playsinline autoplay></video><div class="cn" id="cn" hidden></div><button class="bcb" id="bcb" hidden aria-label="Broadcast to everyone">📢</button><button class="fsb" id="fs">⛶ Full</button><div class="ph" id="ph">Open this tab to start</div></div>
+  <div id="fbp" hidden>
+    <div class="row"><div class="lg" style="margin:0">⚽ Football channels</div><button class="ghost" id="fbr">Re-check</button></div>
+    <div class="sub" id="fbs"></div>
+    <div id="fbl"></div>
+    <div class="lg">Matches</div><div id="fbm"></div>
+  </div>
+  <div id="catp" hidden>
+    <div class="days" id="catc"></div>
+    <input type="search" id="catq" placeholder="Search in this category">
+    <div class="sub" id="cats"></div>
+    <div id="catl"></div>
+    <button class="ghost" id="catm" hidden style="width:100%;margin-top:6px">Show more</button>
+  </div>
+  <input type="search" id="chq" placeholder="Search channels" hidden>
+  <div class="lg" id="chh" hidden>Channels</div><div id="chs"></div>
+  <div id="sv" hidden><div class="lg">Saved links</div><div id="saved"></div></div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section class="tab" id="t-hl"><div class="days" id="hlc"></div><div class="yt" id="hlp" hidden></div><button class="ghost" id="hlyt" hidden style="width:100%;margin-bottom:10px">▶ Open video</button><div class="sub" id="hls"></div><div id="hll"></div></section>
+
+<!-- TEAMS -->
+<section class="tab" id="t-teams">
+  <input type="search" id="tq" placeholder="Search teams">
+  <div class="lg">Followed</div><div id="fav"></div>
+  <div class="lg">Teams from today's matches</div><div id="allteams"></div>
+</section>
+
+<!-- ME / OWNER -->
+<section class="tab" id="t-me">
+  <div class="sec"><h3>Your stats</h3>
+    <div class="row"><div><div class="stat" id="s1">0</div><small>Predictions</small></div><div><div class="stat" id="s2">0</div><small>Teams followed</small></div><div><div class="stat" id="s3">0</div><small>Saved links</small></div></div>
+  </div>
+  <div class="sec"><h3>Your team</h3><div class="row"><b id="myteam"></b><button class="ghost" id="chg">Change</button></div></div>
+  <div id="owner" hidden>
+    <div class="sec"><h3>Owner: power tools</h3>
+      <div class="row"><small>Your pick counts as <b id="owv"></b> votes</small></div>
+      <input type="range" id="ow" min="1" max="10" style="width:100%">
+      <div class="row"><small>Banner style</small><div class="days" style="margin:0"><button class="chip" data-bs="gold">Gold</button><button class="chip" data-bs="green">Green</button><button class="chip" data-bs="red">Red</button></div></div>
+      <div style="height:8px"></div><input type="text" id="bnh" inputmode="decimal" placeholder="Auto-hide banner after how many hours? (empty = never)">
+      <div class="row"><div><div class="stat" id="gcn">0</div><small>SportAPI calls today (this phone)</small></div><button class="ghost" id="cc">Clear cache</button></div>
+      <div style="height:8px"></div><input type="text" id="rsi" placeholder="Paste a backup here, then press Restore">
+      <div class="row"><button class="ghost" id="bk">Copy backup</button><button class="ghost" id="rs">Restore</button></div></div>
+    <div class="sec"><h3>Owner: announcement</h3>
+      <input type="text" id="bn" placeholder="Banner message for the app">
+      <div class="row"><button class="big" id="bnset">Show banner</button><button class="ghost" id="bnclr">Clear</button></div></div>
+    <div class="sec"><h3>Owner: add match</h3>
+      <input type="text" id="ch" placeholder="Home team"><div style="height:8px"></div>
+      <input type="text" id="ca" placeholder="Away team"><div style="height:8px"></div>
+      <input type="text" id="cl" placeholder="League / tournament">
+      <div class="row"><button class="big" id="cadd">Add to today</button></div></div>
+    <div class="sec"><h3>Owner: data</h3>
+      <div class="row"><button class="ghost" id="rst">Reset all predictions</button><button class="ghost" id="unh">Unhide matches</button></div></div>
+  </div>
+  <div class="empty" id="notowner">Owner tools appear here for the owner account.</div>
+</section>
+
+<!-- TABLES -->
+<section class="tab" id="t-tables"><div class="days" id="lgc"></div><div id="tb"></div></section>
+<!-- RANKS -->
+<section class="tab" id="t-ranks"><div class="days" id="rkc"></div><div id="rk"></div></section>
+
+<!-- ZSOCIAL -->
+<section class="tab" id="t-zsocial">
+  <div class="zs-tabs"><button class="on" data-zs="post">ZPost</button><button data-zs="reel">ZReel</button></div>
+  <div class="zs-pager" id="zsPager">
+    <div class="zs-pane" id="zsPost"></div>
+    <div class="zs-pane zr-pane" id="zsReel"></div>
+  </div>
+</section>
+
+<!-- LOADING SCREEN -->
+<div id="ld"><div class="ball"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#fff"/><path d="M32 20l11 8-4 13H25l-4-13z" fill="#1d1a46"/><path d="M32 20V8M43 28l12-4M39 41l7 10M25 41l-7 10M21 28L9 24" stroke="#1d1a46" stroke-width="3" fill="none"/></svg></div><h2 id="ldt"></h2><p id="ldm"></p><div class="lb"><i id="ldb"></i></div></div>
+<div id="mc"></div>
+<div id="mo"></div>
+
+<!-- FAN TEAM ONBOARDING -->
+<div class="sheet" id="ob"><div><h3 style="font-size:18px">Which team do you support?</h3><div class="sub"><span>Pick your club. It sets your colors and your place in the Ranks.</span></div><div class="tg" id="obg"></div><div class="obf"><input type="text" id="obi" placeholder="Not listed? Type your team"><button class="big wide" id="obok" style="margin-top:10px">Continue</button></div></div></div>
+
+<!-- PREDICT SHEET -->
+<div class="sheet" id="sheet"><div id="sbody"></div></div>
+
+<svg width="0" height="0" style="position:absolute"><defs><linearGradient id="zg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff2a8"/><stop offset=".5" stop-color="#f6b92b"/><stop offset="1" stop-color="#b66a00"/></linearGradient><symbol id="zfs" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="url(#zg)"/><circle cx="12" cy="12" r="8.6" fill="none" stroke="#7a4a00" stroke-opacity=".7" stroke-width="1"/><path d="M8.2 8.2h7.6l-7.6 7.6h7.6" fill="none" stroke="#5a3400" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></symbol></defs></svg>
+<section class="tab" id="t-cards"></section>
+<div id="zo"><button class="x">Skip</button><div class="stage"></div><div class="hint"></div></div><div class="zdet" id="zdet"></div>
+<nav>
+  <button class="on" data-t="matches" aria-label="matches"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7l4 3-1.5 5h-5L8 10z"/></svg></button>
+  <button data-t="tables" aria-label="tables"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16"/></svg></button>
+  <button data-t="ranks" aria-label="ranks"><svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 01-10 0zM7 6H4v2a3 3 0 003 3M17 6h3v2a3 3 0 01-3 3"/></svg></button>
+  <button data-t="live" aria-label="live"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="13" rx="3"/><path d="M9 21h6M10 9l5 2.5-5 2.5z"/></svg></button>
+  <button data-t="zsocial" aria-label="zsocial"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></svg></button>
+  <button data-t="hl" aria-label="hl"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9l5 3-5 3z"/></svg></button>
+  <button data-t="teams" aria-label="teams"><svg viewBox="0 0 24 24"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 17.2 6.5 20.2l1-6.2L3 9.6l6.2-.9z"/></svg></button>
+  <button data-t="cards" aria-label="cards"><svg viewBox="0 0 24 24"><rect x="7" y="3" width="12" height="16" rx="2"/><path d="M4 7v12a2 2 0 0 0 2 2h9M11 9l2 2 2-2"/></svg></button>
+  <button data-t="me" aria-label="me"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></button>
+</nav>
+
+<!-- goal celebration + owner test lab mount points -->
+
+<div id="zg" aria-live="polite"></div>
+<canvas id="zgc"></canvas>
+<div id="zn"></div>
+<script src="app.js"></script>
+</body>
+</html>
